@@ -191,3 +191,70 @@ def main():
     key = random(1024)
     ciphertexts = [encrypt(key, msg) for msg in MSGS]
 ```
+
+**Output**
+```
+g++ -std=c++11 decrypt_otp_stanford.cpp -o decrypt_otp_stanford.exe && ./decrypt_otp_stanford.exe
+---------------------------------------------------------------
+First, Lets see the guessed key
+---------------------------------------------------------------
+66.39.6E.89.C9.DB.D8.CB.98.74.35.2A.CD.63.95.10.2E.AF.CE.78.AA.7F.ED.28.A0.6E.7E.C9.8D.29.C5.0B.69.B0.33.DB.14.F8.AA.8F.1A.9C.6D.70.8F.80.C0.66.C7.63.F0.F0.12.31.48.CD.D8.E8.02.D0.5B.A9.87.77.33.5D.AE.FC.EC.D5.9C.43.3A.6B.26.8B.60.BF.4E.F0.3C.9A.70.05.20.20.20.20.31.61.ED.20.20.04.20.7B.76.CF.D2.20.D2.20.8C.57.37.6E.DB.A8.C2.20.FFFFFFFF.4F.7C.FFFFFFFF.76.61.E2.A1.20.20.45.20.44.50.53.C0.A1.BA.FFFFFFFF.6C.78.FFFFFFFF.91.79.41.FFFFFFFF.FFFFFFFF.CF.FFFFFFFF.BB.C6.43.4A.C4.AB.41.87.FFFFFFFF.A9.FFFFFFFF.BF.57.8C.C7.8A.A8.82.D1.B9.A3.67.FFFFFFFF.FFFFFFFF.9E.A7.85.BC.FFFFFFFF.7D.4C.D8.C4.91.FFFFFFFF.FFFFFFFF.DF.D7.FFFFFFFF.83.FFFFFFFF.E8.46.FFFFFFFF.F9.84.EE.
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Lets see the decryped message using guessed key
+---------------------------------------------------------------
+[00]: We can aactor the number    with qu ctu▒ computers  We can also factor the number   ▒▒w▒h a▒▒o▒n raKn▒d to ba▒*mt* he EmG  n Ro*,r*   ** *
+[01]: Euler whuld probably enjoh5that nowaeis▒theorem bemomes a corner stone of crypto -1T▒▒q▒ymo▒▒ ▒ tEuNe▒'s theo▒*
+[02]: The nicb thing about Keey}zq is nowaze ▒ryptographkrs can drive a lot of fancy carb5▒▒Z▒n B▒▒e▒
+[03]: The cipoertext produced bh5a weak e/nry▒tion algorgthm looks as good as ciphertext1e▒▒z▒ced▒▒y▒/tstPo▒g encry▒*$o*rllgd^iV;mc- P* l*pH
+[04]: You don t want to buy a sta of car *hys▒from a guy.who specializes in stealing carb5▒▒S▒rc ▒▒t▒ 6erE ▒ommenti▒*mo*rNli{\eP
+a****r4.;rd  *e*          u**    * i  phya  t▒at which wgll keep secrets safe from your }|▒▒r▒ si▒▒e▒btanF ▒hat whi▒*mw*>a knIp e ret*is*f
+[06]: There aue two types of cyaaography:abne▒that allow} the Government to use brute focvݻj▒ br▒▒k▒:<e Ao▒e, and ▒*( *:lt yIqW:r&s t*, *o$**(*<9a:od2<* *<81+tfbr7 ** 1-*. <= **  * *  *
+[07]: We can tee the point whert5the chipads ▒nhappy if o wrong bit is sent and consumes1x▒▒{▒pow▒▒ ▒<;m Vh▒ enviro▒*(n*r  AoE q;a.ir
+[08]: A (privfte-key)  encrypti~{ scheme 2yat▒s 3 algorizhms, namely a procedure for gentg▒▒w▒g k▒▒s▒n5 pPo▒edure f▒*me*1ypEnE "nd *ip*o
+                                                                                                                                        $**7*r+.<  ",*y*:$+)z▒
+[09]:  The Coicise OxfordDictiotry (2006h-de ▒▒nes crypzo as the art of  writing o r so}c▒▒y▒cod▒▒.▒
+[10]: The secuet message is: Wht{ using aa~tr▒am cipher,.never use the key more than onct
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Unset key if the decrypted text is not readable
+---------------------------------------------------------------
+66.39.6E.89.C9.DB.D8.CB.98.74.35.2A.CD.63.95.10.2E.AF.CE.78.AA.7F.ED.28.A0.FFFFFFFF.7E.C9.8D.29.C5.0B.69.B0.33.DB.14.F8.AA.FFFFFFFF.FFFFFFFF.FFFFFFFF.6D.70.8F.80.C0.66.C7.63.F0.F0.12.31.48.CD.D8.E8.02.D0.5B.A9.87.77.33.5D.AE.FC.EC.D5.9C.43.3A.6B.26.8B.60.BF.4E.F0.3C.9A.70.FFFFFFFF.FFFFFFFF.FFFFFFFF.20.FFFFFFFF.31.61.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.7B.76.FFFFFFFF.FFFFFFFF.20.FFFFFFFF.FFFFFFFF.FFFFFFFF.57.37.6E.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.4F.7C.FFFFFFFF.76.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.20.45.FFFFFFFF.FFFFFFFF.50.53.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.6C.78.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.43.4A.FFFFFFFF.FFFFFFFF.41.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.57.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.67.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.FFFFFFFF.BC.FFFFFFFF.7D.4C.D8.C4.91.FFFFFFFF.FFFFFFFF.DF.D7.FFFFFFFF.83.FFFFFFFF.E8.46.FFFFFFFF.F9.84.EE.
+
+---------------------------------------------------------------
+Removed unreadable part
+---------------------------------------------------------------
+[00]: We can aactor the number *  with qu ctu***omputers  We can also factor the number  ***w*h *****n **K*** to*****mt* ****Em** n****,r********
+[01]: Euler whuld probably enjo*5that nowaeis***eorem bemomes a corner stone of crypto -1***q*ym***** t**N***s t*****
+[02]: The nicb thing about Keey*zq is nowaze ***ptographkrs can drive a lot of fancy carb***Z*n *****
+[03]: The cipoertext produced b*5a weak e/nry***on algorgthm looks as good as ciphertext1***z*ce*****/t**P*** en*****$o*r****^i**mc**** l**********  *
+[04]: You don t want to buy a s*a of car *hys***om a guy.who specializes in stealing carb***S*rc***** 6**E***mme*****mo*r****\e*
+[05]: There aue two types of cr*etographya  t*** which wgll keep secrets safe from your }***r* s*****bt**F***at *****mw*>****Ip**e ****is**********.;** ***** ********u***** * i
+[06]: There aue two types of cy*aography:abne***at allow} the Government to use brute foc***j* b*****:<**A***, a*****( *:****Iq**r&****, **********a:**2*****8******** *****-*. <= **  * *  *
+[07]: We can tee the point wher*5the chipads ***appy if o wrong bit is sent and consumes1***{*po*****<;**V***env*****(n*r****E **a.**
+[08]: A (privfte-key)  encrypti*{ scheme 2yat***3 algorizhms, namely a procedure for gent***w*g *****n5**P***dur*****me*1****En** "****ip**********.<**"*****$****
+[09]:  The Coicise OxfordDictio*try (2006h-de***nes crypzo as the art of  writing o r so}***y*co*****
+[10]: The secuet message is: Wh*{ using aa~tr*** cipher,.never use the key more than onct
+---------------------------------------------------------------
+
+---------------------------------------------------------------
+Corrected Keys...
+---------------------------------------------------------------
+66.39.6E.89.C9.DB.D8.CC.98.74.35.2A.CD.63.95.10.2E.AF.CE.78.AA.7F.ED.28.A0.7F.6B.C9.8D.29.C5.0B.69.B0.33.9A.19.F8.AA.40.1A.9C.6D.70.8F.80.C0.66.C7.63.FE.F0.12.31.48.CD.D8.E8.02.D0.5B.A9.87.77.33.5D.AE.FC.EC.D5.9C.43.3A.6B.26.8B.60.BF.4E.F0.3C.9A.61.10.98.BB.3E.9A.31.61.ED.C7.B8.04.A3.35.22.CF.D2.02.D2.C6.8C.57.37.6E.DB.A8.C2.CA.50.02.7C.61.24.6C.E2.A1.2B.0C.45.02.17.50.10.C0.A1.BA.46.25.78.6D.91.11.00.79.7D.8A.47.E9.8B.02.04.C4.EF.06.C8.67.A9.50.F1.1A.C9.89.DE.A8.8F.D1.DB.F1.67.48.74.9E.D4.C6.F4.5B.38.4C.9D.96.C4.FFFFFFFF.FFFFFFFF.DF.D7.FFFFFFFF.83.FFFFFFFF.E8.46.FFFFFFFF.F9.84.EE.
+---------------------------------------------------------------
+
+[00]: We can factor the number 15 with quantum computers. We can also factor the number 15 with a dog trained to bark three times - Robert Harley
+[01]: Euler would probably enjoy that now his theorem becomes a corner stone of crypto - Annonymous on Euler's theorem
+[02]: The nice thing about Keeyloq is now we cryptographers can drive a lot of fancy cars - Dan Boneh
+[03]: The ciphertext produced by a weak encryption algorithm looks as good as ciphertext produced by a strong encryption algorithm - Philip Zimmermann
+[04]: You don't want to buy a set of car keys from a guy who specializes in stealing cars - Marc Rotenberg commenting on Clipper
+[05]: There are two types of cryptography - that which will keep secrets safe from your little sister, and that which will keep secrets safe from your government - Bruce Schneier
+[06]: There are two types of cyptography: one that allows the Government to use brute force to break the code, and one that requires the Government to use brute force to break you**  * *  *
+[07]: We can see the point where the chip is unhappy if a wrong bit is sent and consumes more power from the environment - Adi Shamir
+[08]: A (private-key)  encryption scheme states 3 algorithms, namely a procedure for generating keys, a procedure for encrypting, and a procedure for decrypting.▒
+[09]:  The Concise OxfordDictionary (2006) deﬁnes crypto as the art of  writing o r solving codes.
+[10]: The secret message is: When using a stream cipher, never use the key more than once
+---------------------------------------------------------------
+```
